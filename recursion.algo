@@ -1,0 +1,38 @@
+RECURRSION CHECKPOINT
+def is_palindrome(word):
+    # Base case: an empty word or a word containing a single character is a palindrome
+    if len(word) <= 1:
+        return True
+    def is_palindrome(word):
+    # Base case: an empty word or a word containing a single character is a palindrome
+    if len(word) <= 1:
+        return True
+   
+    # Compare the characters located at the ends of the word
+    if word[0] == word[-1]:
+        # Recursively test the rest of the word
+        return is_palindrome(word[1:-1])
+    else:
+        # If the characters are different, it's not a palindrome
+        return False
+# Example usage:
+word_to_check = "radar"
+result = is_palindrome(word_to_check.lower())  # Convert to lowercase for case-insensitivity
+if result:
+    print(f"{word_to_check} is a palindrome.")
+else:
+    print(f"{word_to_check} is not a palindrome.")
+    # Compare the characters located at the ends of the word
+    if word[0] == word[-1]:
+        # Recursively test the rest of the word
+        return is_palindrome(word[1:-1])
+    else:
+        # If the characters are different, it's not a palindrome
+        return False
+# Example usage:
+word_to_check = "radar"
+result = is_palindrome(word_to_check.lower())  # Convert to lowercase for case-insensitivity
+if result:
+    print(f"{word_to_check} is a palindrome.")
+else:
+    print(f"{word_to_check} is not a palindrome.")
